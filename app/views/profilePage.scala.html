@@ -1,0 +1,35 @@
+@(data:model.Accounts)
+
+<script src="@routes.Assets.versioned("javascripts/signup.js")" type="text/javascript"></script>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li>
+            <input type="button" id="logout" value="logout">
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row" style="margin-top:20px;">
+    <div class="col-md-3" ></div>
+    <div class="col-md-6 info underline" >Name:@data.fname </div>
+    <div class="col-md-3" ></div>
+</div>
+
+<div class="row" style="margin-top:20px;">
+    <div class="col-md-4" ></div>
+    <div class="col-md-4 restInfo" >UserName:@data.uname</div>
+    <div class="col-md-4" ></div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <div class="col-md-4" ></div>
+    <div class="col-md-4 restInfo" >DateOfBirth:@data.dateOfBitrh</div>
+    <div class="col-md-4" ></div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <div class="col-md-4" ></div>
+    <div class="col-md-4 restInfo" >Gender:@data.gender </div>
+    <div class="col-md-4" ></div>
+</div>
+
