@@ -1,17 +1,15 @@
 if (window.console) {
-  console.log("Welcome to your Play application's JavaScript!");
+  console.log("Welcome to Ajax-Play Assignment JavaScript!");
 };
 
 $(document).ready(function(){
-
-
          $('#btn').on("click",function(){
          jsRoutes.controllers.HomeController.signUp().ajax({
                       success: function(data){
                         $('#body').html(data);
-                      },
+                        },
                       error: function(){
-                      $('#body').html("hello");
+                      $('#body').html("Bye-Bye");
                       alert("fail")
                     }
 
@@ -27,7 +25,7 @@ $(document).ready(function(){
                               $('#body').html(data);
                             },
                             error: function(){
-                            $('#body').html("hello");
+                            $('#body').html("Bye-Bye");
                             alert("fail")
                           }
 
